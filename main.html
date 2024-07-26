@@ -1,68 +1,55 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table with Images and Text</title>
+    <title>Architectural Information</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <style>
+        /* Inline CSS for demonstration; move this to your styles.css file */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .imageContainer {
+            text-align: center;
+            margin: 20px 0;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
         }
         th, td {
-            border: 1px solid #000;
-            padding: 10px;
+            border: 1px solid #ddd;
+            padding: 8px;
             text-align: center;
         }
-        .first-column, .last-column {
-            width: 200px;
-        }
-        .middle-column {
-            width: 600px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
+        td img {
+            width: 100%; /* Adjust as needed */
+            max-width: 200px; /* Ensures image fits within the column width */
         }
     </style>
 </head>
 <body>
-
+    <div class="imageContainer">
+        <img src="your-image-url.jpg" alt="Architectural Image">
+    </div>
+    
     <table>
         <tr>
-            <th class="first-column">First Column</th>
-            <th class="middle-column">Middle Column</th>
-            <th class="last-column">Last Column</th>
+            <td><img src="image1-url.jpg" alt="Image 1"></td>
+            <td>Text Content for Row 1, Middle Column</td>
+            <td><img src="image2-url.jpg" alt="Image 2"></td>
         </tr>
         <tr>
-            <td class="first-column">
-                <img src="https://via.placeholder.com/200" alt="First Column Image">
-            </td>
-            <td class="middle-column">Text Content for Row 1</td>
-            <td class="last-column">
-                <img src="https://via.placeholder.com/200" alt="Last Column Image">
-            </td>
-        </tr>
-        <tr>
-            <td class="first-column">
-                <img src="https://via.placeholder.com/200" alt="First Column Image">
-            </td>
-            <td class="middle-column">Text Content for Row 2</td>
-            <td class="last-column">
-                <img src="https://via.placeholder.com/200" alt="Last Column Image">
-            </td>
+            <td><img src="image3-url.jpg" alt="Image 3"></td>
+            <td>Text Content for Row 2, Middle Column</td>
+            <td><img src="image4-url.jpg" alt="Image 4"></td>
         </tr>
     </table>
-    <script type="text/javascript" src="./script.js">
-</script>
-
 </body>
-
 </html>
+
